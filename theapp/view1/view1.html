@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+        <head>
+            <title>Login</title>
+            <link rel="stylesheet" href="app.css">
+
+</head>
+        <body ngApp="myApp">
+        <form id="navigation-wrapper" ng-submit="submitLogin(user)">
+                <div ng-show="myValue" class="ng-hide">
+                Name:<input type="text" ng-model="user.name"><br>
+                Password:<input type="password" ng-model="user.password">
+                <button type="submit">Log In</button>
+                </div>
+
+        <div >
+            <div ng-show="accountValue" class="ng-hide">
+            <div  ng-repeat="account in accountss" >
+                        <p>{{account.name}} - {{account.amount}}  </p>
+                        <br>
+
+            </div>
+            <p id="kbutton" ng-click="createAccount()">Create Account<p>
+            <p id="kbutton" ng-click="withdrawAccount()">Withdraw</p>
+            <p id="kbutton" ng-click="depositAccount()">Deposit</p>
+            <p id="kbutton" ng-click="transferAccount()">Transfer between accounts
+            <p id="kbutton" ng-click="getBalance(user)">Get balance</p>
+            </div>
+        </div>
+
+        <div id="navigation-wrapper" ng-show="valuek" class="ng-hide">
+            <p id="kbutton">Your Balance is : {{balance}}</p>
+        </div>
+
+        <div id="navigation-wrapper" ng-show="value3" class="ng-hide">
+                <form >
+                        Account Name <input type="text" ng-model="account1.name"><br>
+                        Amount <input type="text" ng-model="account1.amount">
+                        <p id="kbutton" ng-click="submitAccount(user,account1)">Create</p>
+
+                </form>
+        </div>
+
+        <div id="navigation-wrapper" ng-show="value4" class="ng-hide">
+            <form >
+                Account Name <input type="text" ng-model="account2.name"><br>
+                Amount to be withdrawn <input type="text" ng-model="account2.amount">
+                <p id="kbutton" ng-click="submitWithdrawal(user,account2)">Withdraw</p>
+
+
+            </form>
+        </div>
+
+        <div id="navigation-wrapper" ng-show="value6" class="ng-hide">
+            <form >
+                Account Name <input type="text" ng-model="account2.name"><br>
+                Amount to be deposited <input type="text" ng-model="account2.amount">
+                <p id="kbutton" ng-click="submitWithdrawal(user,account2)">Deposit</p>
+            </form>
+        </div>
+
+        <div id="navigation-wrapper" ng-show="value7" class="ng-hide">
+            <form >
+                Account from which to transfer <input type="text" ng-model="account2.name"><br>
+                Account to which to transfer <input type="text" ng-model="account3.name"><br>
+                Amount to be transfered  <input type="text" ng-model="account2.amount">
+                <p id="kbutton" ng-click="submitTransfer(user,account2,account3)">Deposit</p>
+            </form>
+        </div>
+
+
+        <div ng-show="value5" class="ng-hide">account not found</div>
+        <div ng-show="my2Value" class="ng-hide">password/user incorrect</div>
+
+    </body>
+</html>

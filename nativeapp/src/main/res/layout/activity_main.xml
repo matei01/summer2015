@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginTop="20pt"
+        android:gravity="center_horizontal"
+        android:text="Welcome User"
+        android:textSize="25dip" />
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="#ff6347"
+        android:text="Login"
+        android:textColor="#fff"
+        android:layout_weight="0.22" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="#ff6347"
+        android:text="Register"
+        android:textColor="#fff"
+        android:layout_weight="0.22" />
+
+</LinearLayout>

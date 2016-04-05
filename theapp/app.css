@@ -1,0 +1,23 @@
+/* app css stylesheet */
+
+#navigation-wrapper {
+  width:465px;
+  border:1px solid red;
+  margin:0 auto;
+  text-align:center;
+}
+
+#top-navigation {
+  margin: 0 auto;
+  border:1px solid blue;
+  padding:5px 0;
+}
+
+#kbutton {
+  width:220px;
+  border:1px solid red;
+  margin:1;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+<div >
+    <form id="navigation-wrapper"  ng-submit="submitPost()">
+      <div ng-show="myValue" class="ng-hide">
+      Name:<input type="text" ng-model="user.name"><br>
+      Password:<input type="password" ng-model="user.password">
+      <button type="submit">Sign up!</button>
+      </div>
+      <div ng-show="my2Value" class="ng-hide">
+      <p>user {{user.name}} successufully added</p>
+      </div>
+</div>
+    </form>
+</body>
+</html>
